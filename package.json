@@ -1,7 +1,7 @@
 {
     "name": "readability",
-    "version": "0.1.0",
-    "description": "Arc90's readability.js adapted to node.js",
+    "version": "0.1.1",
+    "description": "Readability with a good performence",
     "keywords": [
         "readability"
     ],
@@ -36,7 +36,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "http://github.com/arrix/node-readability.git"
+            "url": "http://github.com/HelloCodeMing/node-readability.git"
         }
     ],
     "dependencies": {
