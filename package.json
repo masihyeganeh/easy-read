@@ -1,5 +1,5 @@
 {
-    "name": "readability",
+    "name": "easy-read",
     "version": "0.1.1",
     "description": "Readability with a good performence",
     "keywords": [
@@ -7,9 +7,9 @@
     ],
     "maintainers": [
         {
-            "name": "Arrix",
-            "email": "arrixzhou@gmail.com",
-            "web": "http://arrix.blogspot.com"
+            "name": "HelloCodeMing",
+            "email": "huanmingwong@163.com",
+            "web": "http://wanghuanming.com"
         }
     ],
     "contributors": [
@@ -42,12 +42,13 @@
     "dependencies": {
        "mjsunit.runner": ">=0.1.0",
        "jsdom": ">=0.1.21",
-       "htmlparser": ">=1.7.3"
+       "htmlparser": ">=1.7.3",
+	   "request": "*"
     },
     "engines" : { "node" : ">=0.2.5" },
     "directories": {
         "lib": "lib"
     },
-    "main": "./lib/readability"
+    "main": "index"
 }
 
