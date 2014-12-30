@@ -1,5 +1,5 @@
 var read = require('./lib/readability');
-var request = require('request');
+var needle = require('needle');
 
 
 /**
@@ -7,11 +7,15 @@ var request = require('request');
  * @callback: will be called in callback(article)
  */
 module.exports = function(html, callback) {
-	if (html.slice(0, 4) === 'http') {
+    if (typeof html != 'string')
+        callback(new TypeError('type of html must be string'));
+	if (html.substring(0, 4) === 'http') {
 		var url = html;
-		request(url, function(err, res, body) {
-			if (!err && res.statusCode == 200) {
-				read.parse(body, url, callback);
+		needle.get(url, function(err, res) {
+            if (typeof res.body == 'object') {
+                callback(new TypeError('this is not a html page'));
+            } else if (!err && res.statusCode == 200) {
+				read.parse(res.body, url, callback);
 			}
 		});
 	} else {
