@@ -15,10 +15,10 @@ Forked from [Arrix](https://github.com/arrix/node-readability).
 
 ## Example
 
-    var readability = require('readability');
+    var read = require('easy-read');
     //...
     // This is an very early example. The API is subject to change.
-    readability.parse(html, url, function(result) {
+    read.parse(html, url, function(result) {
         console.log(result.title, result.content);
     });
 
