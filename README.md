@@ -12,6 +12,7 @@ Forked from [Arrix](https://github.com/arrix/node-readability).
 * [node.js](http://nodejs.org/)
 * [jsdom](https://github.com/tmpvar/jsdom)
 * [htmlparser](https://github.com/tautologistics/node-htmlparser)
+* [needle](https://github.com/tomas/needle)
 
 ## Example
 
