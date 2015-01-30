@@ -6,19 +6,18 @@ Forked from [Arrix](https://github.com/arrix/node-readability).
 
 ## Why not node-readability
 - No url support
-- performance is fairly awesome.
+- Performance is fairly awesome.
+- Better support for multiple languages.
 
 ## Requirements
-* [node.js](http://nodejs.org/)
-* [jsdom](https://github.com/tmpvar/jsdom)
+* [jsdom 2.x](https://github.com/tmpvar/jsdom)
 * [htmlparser](https://github.com/tautologistics/node-htmlparser)
 * [needle](https://github.com/tomas/needle)
 
 ## Example
 
     var read = require('easy-read');
-    //...
-    // This is an very early example. The API is subject to change.
+    
     read.parse(html, url, function(result) {
         console.log(result.title, result.content);
     });
